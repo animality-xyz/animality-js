@@ -1,5 +1,4 @@
 # animality
-
 A simple API wrapper that generates images & facts of any animal
 
 # Installation
@@ -33,7 +32,9 @@ const animality = require('animality');
 const animal = 'cat';
 animality.getAsync(animal).then(console.log);
 ```
+
 This outputs the following object in the terminal:
+
 ```json
 {
   "name": "cat",
@@ -41,13 +42,17 @@ This outputs the following object in the terminal:
   "fact": "A fact here"
 }
 ```
+
 Other than that, this package also allows you to request multiple animals at the same time.
+
 ```js
 const animality = require('animality');
 const animals = ['cat', 'dog', 'panda'];
 animality.getAsync(animals).then(console.log);
 ```
+
 This outputs the following array of objects in the terminal:
+
 ```json
 [
   {
