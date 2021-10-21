@@ -5,6 +5,7 @@ A simple API wrapper that generates images & facts of any animal
 ```bash
 $ npm install animality
 ```
+
 The Node.js wrapper for this API is available for use in [Node Package Manager](https://www.npmjs.com/package/animality). It's use is pretty straight-forward.
 
 # Usage
