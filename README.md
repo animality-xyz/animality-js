@@ -10,7 +10,6 @@ The Node.js wrapper for this API is available for use in [Node Package Manager](
 
 # Usage
 These are the 15 animal strings that can be used to send a request to the API.
-
 * `cat`
 * `dog`
 * `bird` 
