@@ -3,24 +3,16 @@
 A simple API wrapper that generates images & facts of any animal
 
 # Installation
-
-Use the package manager [npm](https://www.npmjs.com/) to install `animality`.
-
 ```bash
-$ npm i animality
+$ npm install animality
 ```
-
-# Require
-
-```js
-const animality = require('animality');
-```
+The Node.js wrapper for this API is available for use in [Node Package Manager](https://www.npmjs.com/package/animality). It's use is pretty straight-forward.
 
 # Usage
+These are the 15 animal strings that can be used to send a request to the API.
 
-### Animals: 
 * `cat`
-* `dog` 
+* `dog`
 * `bird` 
 * `panda` 
 * `redpanda` 
@@ -35,59 +27,43 @@ const animality = require('animality');
 * `duck`
 * `penguin`
 
-## Get one or multiple animal images and facts
-
+# Example
 ```js
 const animality = require('animality');
-
-// Singular animal.
 const animal = 'cat';
-
 animality.getAsync(animal).then(console.log);
-/*
-  Output:
-  {
-    name: 'cat',
-    image: 'An image URL here',
-    fact: 'A fact here'
-  }
-*/
-
-// Multiple animals can also be used.
+```
+This outputs the following object in the terminal:
+```json
+{
+  "name": "cat",
+  "image": "An image URL here",
+  "fact": "A fact here"
+}
+```
+Other than that, this package also allows you to request multiple animals at the same time.
+```js
+const animality = require('animality');
 const animals = ['cat', 'dog', 'panda'];
-
 animality.getAsync(animals).then(console.log);
-/*
-  Output:
-  [
-    {
-      name: 'cat',
-      image: 'An image URL here',
-      fact: 'A fact here'
-    },
-    {
-      name: 'dog',
-      image: 'An image URL here',
-      fact: 'A fact here'
-    },
-    {
-      name: 'panda',
-      image: 'An image URL here',
-      fact: 'A fact here'
-    }
-  ]
-*/
-
-// A random animal type.
-const animal = 'random';
-
-animality.getAsync(animal).then(console.log);
-/*
-  Output:
+```
+This outputs the following array of objects in the terminal:
+```json
+[
   {
-    name: 'redpanda',
-    image: 'An image URL here',
-    fact: 'A fact here'
+    "name": "cat",
+    "image": "An image URL here",
+    "fact": "A fact here"
+  },
+  {
+    "name": "dog",
+    "image": "An image URL here",
+    "fact": "A fact here"
+  },
+  {
+    "name": "panda",
+    "image": "An image URL here",
+    "fact": "A fact here"
   }
-*/
+]
 ```
