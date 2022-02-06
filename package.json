@@ -4,7 +4,7 @@
   "description": "A simple API wrapper that generates images & facts of any animal",
   "main": "index.js",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.2.0"
   },
   "devDependencies": {},
   "scripts": {
