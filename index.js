@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const animals = [
   'cat',
   'dog',
@@ -18,6 +17,8 @@ const animals = [
 ];
 const base = 'https://api.animality.xyz';
 
+let fetch;
+
 /**
  * @typedef {Object} AnimalObject
  * @property {string} name
@@ -32,6 +33,9 @@ module.exports = {
    * @returns {AnimalObject | AnimalObject[]} The image and fact object.
    */
   async getAsync(type = 'random') {
+    if (fetch === undefined)
+      ({ default: fetch } = await import('node-fetch'));
+
     const isArray = Array.isArray(type);
     if ((typeof type !== 'string' && !isArray) || isArray && (type = type.flat()) && !type.every(t => typeof t === 'string')) throw new TypeError("'type' must be a string or an array of strings");
     
