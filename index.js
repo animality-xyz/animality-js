@@ -26,34 +26,6 @@ let fetch;
  * @property {string} fact
  */
 
-const animals = [
-  'cat',
-  'dog',
-  'bird',
-  'panda',
-  'redpanda',
-  'koala',
-  'fox',
-  'whale',
-  'kangaroo',
-  'bunny',
-  'lion',
-  'bear',
-  'frog',
-  'duck',
-  'penguin'
-];
-const base = 'https://api.animality.xyz';
-
-let fetch;
-
-/**
- * @typedef {Object} AnimalObject
- * @property {string} name
- * @property {string} image
- * @property {string} fact
- */
-
 module.exports = {
   /**
    * Returns an image and a fact of the specified animal type(s).
