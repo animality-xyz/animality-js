@@ -13,7 +13,8 @@ const animals = [
   'bear',
   'frog',
   'duck',
-  'penguin'
+  'penguin',
+  'axolotl'
 ];
 const base = 'https://api.animality.xyz';
 
