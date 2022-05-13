@@ -9,7 +9,7 @@ $ npm install animality
 The Node.js wrapper for this API is available for use in [Node Package Manager](https://www.npmjs.com/package/animality). It's use is pretty straight-forward.
 
 # Usage
-These are the 16 animal strings that can be used to send a request to the API:
+These are the 17 animal strings that can be used to send a request to the API:
 * `cat`
 * `dog`
 * `bird` 
@@ -17,8 +17,9 @@ These are the 16 animal strings that can be used to send a request to the API:
 * `redpanda` 
 * `koala` 
 * `fox` 
-* `whale` 
-* `kangaroo` 
+* `whale`
+* `dolphin` 
+* `kangaroo`
 * `bunny`
 * `lion`
 * `bear`
