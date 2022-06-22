@@ -1,4 +1,4 @@
-# animality
+# animality-js
 A simple API wrapper that generates images & facts of any animal
 
 # Installation
