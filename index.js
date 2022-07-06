@@ -2,11 +2,12 @@ const animals = [
   'cat',
   'dog',
   'bird',
-  'panda',
+ 'panda',
   'redpanda',
   'koala',
   'fox',
   'whale',
+ ' dolphin',
   'kangaroo',
   'bunny',
   'lion',
@@ -14,7 +15,8 @@ const animals = [
   'frog',
   'duck',
   'penguin',
-  'axolotl'
+  'axolotl',
+  'capybara'
 ];
 const base = 'https://api.animality.xyz';
 
@@ -42,6 +44,7 @@ module.exports = {
     if ((typeof type !== 'string' && !isArray) || isArray && (type = type.flat()) && !type.every(t => typeof t === 'string')) throw new TypeError("'type' must be a string or an array of strings");
 
     type = type === 'random' ? animals[Math.floor(Math.random() * animals.length)] : !isArray ? type.toLowerCase() : [...new Set(type.map(t => t.toLowerCase()))];
+    
     
     if (!isArray && !animals.includes(type)) throw new TypeError(`'${type}' is not a valid type, the valid types are: ${animals.join(', ')}, random`);
  
