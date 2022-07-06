@@ -45,6 +45,7 @@ module.exports = {
 
     type = type === 'random' ? animals[Math.floor(Math.random() * animals.length)] : !isArray ? type.toLowerCase() : [...new Set(type.map(t => t.toLowerCase()))];
     
+    
     if (!isArray && !animals.includes(type)) throw new TypeError(`'${type}' is not a valid type, the valid types are: ${animals.join(', ')}, random`);
  
     if (isArray) return Promise.all(type.map(t => this.getAsync(t, apiKey)));
