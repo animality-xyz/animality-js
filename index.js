@@ -7,6 +7,7 @@ const animals = [
   'koala',
   'fox',
   'whale',
+  'dolphin',
   'kangaroo',
   'bunny',
   'lion',
@@ -14,7 +15,8 @@ const animals = [
   'frog',
   'duck',
   'penguin',
-  'axolotl'
+  'axolotl',
+  'capybara'
 ];
 const base = 'https://api.animality.xyz';
 
