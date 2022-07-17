@@ -30,9 +30,9 @@ These are the 17 animal strings that can be used to send a request to the API:
 
 # Example
 ```js
-const animality = require('animality');
+const {Animality} = require('animality');
 const animal = 'cat';
-animality.getAsync(animal, 'API_KEY').then(console.log);
+Animality.getAsync(animal, 'API_KEY').then(console.log);
 ```
 
 This outputs the following object in the terminal:
@@ -48,9 +48,9 @@ This outputs the following object in the terminal:
 Other than that, this package also allows you to request multiple animals at the same time.
 
 ```js
-const animality = require('animality');
+const {Animality} = require('animality');
 const animals = ['cat', 'dog', 'panda'];
-animality.getAsync(animals, 'API_KEY').then(console.log);
+Animality.getAsync(animals, 'API_KEY').then(console.log);
 ```
 
 This outputs the following array of objects in the terminal:
