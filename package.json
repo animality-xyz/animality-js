@@ -1,7 +1,7 @@
 {
   "name": "animality",
-  "version": "2.0.2",
-  "description": "A simple API wrapper that generates images & facts of any animal",
+  "version": "2.0.4",
+  "description": "A simple package that generates images & facts of any animal using the Animality API.",
   "main": "index.js",
   "dependencies": {
     "node-fetch": "^3.3.2"
