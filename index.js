@@ -9,7 +9,7 @@ const animals = [
   'whale',
   'dolphin',
   'kangaroo',
-  'bunny',
+  'rabbit',
   'lion',
   'bear',
   'frog',
