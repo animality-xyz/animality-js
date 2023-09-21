@@ -16,7 +16,12 @@ const animals = [
   'duck',
   'penguin',
   'axolotl',
-  'capybara'
+  'capybara',
+  'hedgehog',
+  'turtle',
+  'narwhal',
+  'squirrel',
+  'fish'
 ];
 const base = 'https://api.animality.xyz';
 
@@ -57,7 +62,7 @@ module.exports = {
       fetch(`${base}/img/${type}`, fetchOptions).then(res => res.json()),
       fetch(`${base}/fact/${type}`, fetchOptions).then(res => res.json())
     ]).catch(err => {
-      throw new Error(`Failed to get type '${type}' from API, error:\n${err}`);
+      throw new Error(`Failed to get type '${type}' from API:\n${err}`);
     });
 
     return { name: type, image, fact };
