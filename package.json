@@ -1,16 +1,14 @@
 {
   "name": "animality",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A simple API wrapper that generates images & facts of any animal",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "devDependencies": {
-    "@types/node": "^18.0.5",
-    "typescript": "^4.7.4"
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
   },
+  "devDependencies": {},
   "scripts": {
-    "build": "tsc",
-    "publish": "npm run build && npm publish"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/animality-xyz/animality/issues"
   },
-  "homepage": "https://animality.xyz",
-  "dependencies": {
-    "undici": "^5.7.0"
-  }
+  "homepage": "https://animality.xyz"
 }
