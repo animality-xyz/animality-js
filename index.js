@@ -58,7 +58,7 @@ module.exports = {
       headers: { 'X-API-Key': typeof apiKey === 'string' ? apiKey : null }
     };
 
-    const [{ link: image }, { fact }] = await Promise.all([
+    const [{ image }, { fact }] = await Promise.all([
       fetch(`${base}/img/${type}`, fetchOptions).then(res => res.json()),
       fetch(`${base}/fact/${type}`, fetchOptions).then(res => res.json())
     ]).catch(err => {
