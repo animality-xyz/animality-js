@@ -1,11 +1,8 @@
 {
   "name": "animality",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "description": "A simple package that generates images & facts of animals using the Animality API.",
   "main": "index.js",
-  "dependencies": {
-    "node-fetch": "^3.3.2"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
