@@ -1,8 +1,11 @@
 declare module 'animality' {
   interface AnimalObject {
-    name: string;
+    type: string;
+    animal: string;
     image: string;
     fact: string;
+    image_id: string;
+    fact_id: string;
   }
 
   namespace fns {
