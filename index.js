@@ -21,7 +21,8 @@ const animals = [
   'turtle',
   'narwhal',
   'squirrel',
-  'fish'
+  'fish',
+  'horse'
 ];
 
 /**
