@@ -1,6 +1,6 @@
 {
   "name": "animality",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A simple package that generates images & facts of animals using the Animality API.",
   "main": "index.js",
   "devDependencies": {},
