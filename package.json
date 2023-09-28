@@ -1,6 +1,6 @@
 {
   "name": "animality",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A simple package that generates images & facts of animals using the Animality API.",
   "main": "index.js",
   "devDependencies": {},
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/animality-xyz/animality"
+    "url": "https://github.com/animality-xyz/animality-js"
   },
   "keywords": [
     "animal",
@@ -20,7 +20,7 @@
   "author": "Hamburger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/animality-xyz/animality/issues"
+    "url": "https://github.com/animality-xyz/animality-js/issues"
   },
   "homepage": "https://animality.xyz"
 }
